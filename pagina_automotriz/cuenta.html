@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UFT-8">
+        <!--PARA QUE SE ADAPTE A DSP MOVILES-->
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+        <title>Mi Cuenta - AUTOCAR'S</title>
+        <link rel="stylesheet" href="cuenta.css">
+        <script src="cuenta.js" defer></script>
+    </head>
+    <body>
+        <div class="menu">
+            <h3>Mi Cuenta</h3>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="inscripcion.html">Reservas</a></li>
+                    <li><a href="cuenta.html">Mi Cuenta</a></li>
+                </ul>
+            </nav>
+            <hr>
+        </div>
+
+        <main class="seccion-principal">
+            <!--izquierdo-->
+            <div class="login">
+                <h2>INICIAR SESIÓN</h2>
+                <p class="subtitulo">
+                    Completa tus credenciales
+                </p>
+
+                <form id="formulario">
+                    <label>Usuario</label>
+                    <input type="text"
+                            id="usuario"
+                            required>
+                    <small>
+                        <p>Usuario: Angelica</p>
+                        <p>Admin: Administrador</p>
+                    </small>
+                    <small id="errorUsuario">⚠️ Solo se permiten letras y espacios</small>
+                    
+                    <label>Contraseña</label>
+                    <input type="password"
+                            id="contra"
+                            required>
+                    <small>
+                        <p>Usuario: ange</p>
+                        <p>Admin: admin.123</p>
+                    </small>
+
+                    <!--btns-->
+                    <div class="botones">
+                        <!--submit envia la informacion a la bdd (backend)-->
+                        <button type="button" class="btn-iniciar">
+                            Iniciar
+                        </button>
+
+                        <button type="submit" class="btn-cerrar" onclick="location.href='index.html'">
+                            Cerrar
+                        </button>
+
+                        <!--reset restable todos los valores a los iniciales-->
+                        <button type="reset" class="btn-limpiar">
+                            Limpiar
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+
+        </main>
+
+        <footer>
+            &copy; Empresa ABC. 2026 .Todos los derechos reservados
+                <b>Dirección: </b>Av.por ahi
+                <b>Contacto: </b>conmigo:b
+        </footer>
+
+    </body>
+</html>

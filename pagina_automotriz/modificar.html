@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+    <hedad>
+        <meta charset="UFT-8">
+        <!--PARA QUE SE ADAPTE A DSP MOVILES-->
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+        
+        <title>Modificar - AUTOCAR'S</title>
+        <link rel="stylesheet" href="general.css">
+        <link rel="stylesheet" href="modificar.css">
+        <script src="modificar.js" defer></script>
+    </hedad>
+
+    <body>
+        <div class="menu">
+            <h4>ADMINISTRADOR AUTOCAR'S</h4>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="inscripcion.html">Reservas</a></li>
+                    <li><a href="cuenta.html">Mi Cuenta</a></li>
+                    <li><a href="adim.html">Administrador</a></li>
+                    <li><a href="perfila.html">Mi Perfil</a></li>
+                </ul>
+            </nav>
+            <hr>
+        </div>
+
+        <div class="f-modificar">
+            <h1>Modificar Reserva</h1>
+            
+            <form id="formularioModi">
+                <!-- Fila 1 -->
+                <div class="campo">
+                    <label for="nombre">Nombre y Apellido</label>
+                    <input type="text" id="nombre">
+                    <small id="errorNombre" class="error-mens">⚠️ Solo se permiten letras y espacios</small>
+                </div>
+                <div class="campo">
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="correo">
+                </div>
+
+                <!-- Fila 2 -->
+                <div class="campo">
+                    <label for="celular">Celular</label>
+                    <input type="text" id="celular" max="10">
+                    <small id="errorCelular" class="error-mens">⚠️ Solo se permiten números</small>
+                </div>
+                <div class="campo">
+                    <label for="placa">Placa</label>
+                    <input type="text" id="placa" min="7" max="7">
+                </div>
+
+                <!-- Fila 3 -->
+                <div class="campo">
+                    <label for="marca">Marca</label>
+                    <input type="text" id="marca">
+                    <small id="errorMarca" class="error-mens">⚠️ Solo se permiten letras y espacios</small>
+                </div>
+                <div class="campo">
+                    <label for="modelo">Modelo</label>
+                    <input type="text" id="modelo">
+                    <small id="errorModelo" class="error-mens">⚠️ Solo se permiten letras y espacios</small>
+                </div>
+
+                <!-- Fila 4 -->
+                <div class="campo">
+                    <label for="servicio">Servicio</label>
+                    <input type="text" id="servicio">
+                    <small id="errorServicio" class="error-mens">⚠️ Solo se permiten letras y espacios</small>
+                </div>
+                <div class="campo">
+                    <label for="kilometraje">Kilometraje</label>
+                    <input type="text" id="kilometraje">
+                    <small id="errorKilometraje" class="error-mens">⚠️ Solo se permiten números</small>
+                </div>
+
+                <!-- Fila 5 -->
+                <div class="campo">
+                    <label for="fecha">Fecha</label>
+                    <input type="text" id="fecha">
+                </div>
+                <div class="campo">
+                    <label for="hora">Hora</label>
+                    <input type="text" id="hora">
+                    <small id="errorHora" class="error-mens">⚠️ Solo se permiten números</small>
+                </div>
+
+                <!-- Botones abajo -->
+                <div class="botones">
+                    <button type="submit" class="btn-guardar">Guardar</button>
+                    <button type="button" class="btn-cancelar" onclick="window.location.href='adim.html'">Cancelar</button>
+                </div>
+            </form>
+        </div>
+
+        <footer>
+            &copy; Empresa ABC. 2026 .Todos los derechos reservados
+                <b>Dirección: </b>Av.por ahi
+                <b>Contacto: </b>conmigo:b
+        </footer>
+
+    </body>
+
+</html>

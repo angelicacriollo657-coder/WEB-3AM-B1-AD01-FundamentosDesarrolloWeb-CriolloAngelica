@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UFT-8">
+        <!--PARA QUE SE ADAPTE A DSP MOVILES-->
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+        
+        <title>Reservas - AUTOCAR'S</title>
+
+        <!--<link rel="stylesheet" href="style.css">-->
+        <link rel="stylesheet" href="reservas.css">
+        <script src="inscripcion.js" defer></script>
+    </head>
+
+    <body>
+        <div class="menu">
+            <h2>RESERVA TU AUTO</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="inscripcion.html">Reservas</a></li>
+                    <li><a href="cuenta.html">Mi Cuenta</a></li>
+                </ul>
+            </nav>
+            <hr>
+        </div>
+
+        <main class="seccion-principal">
+            <!--izquierdo-->
+            <div class="marca-info">
+                <h2>AUTOCAR'S</h2>
+                <h2>¡Hacemos brillar <span class="resaltado">tu esencia!</span></h2>
+            </div>
+
+            <!--derecho-->
+            <div class="contenedor">
+                <h1>RESERVACIONES</h1>
+                <!--class para comunicarnos con css-->
+                <p class="subtitulo">
+                    Completa tus datos para el registro
+                </p>
+
+                <form id="formulario">
+                    <label for="nombre">Nombre y Apellido</label>
+                    <input type="text"
+                            id="nombre"
+                            placeholder="Ingres su nombre y apellido"
+                            min="3"
+                            required>
+                    <!-- small para mensaje, errores o notas cortas-->
+                    <small id="errorNombre" class="error-mens">⚠️ Solo se permiten letras y espacios</small>
+
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email"
+                            id="correo"
+                            placeholder="ejemplo@empresa.com"
+                            required>
+
+                    <label for="celular">Celular</label>
+                    <input type="text"
+                            id="celular"
+                            placeholder="099999999999"
+                            min="10"
+                            max="10"
+                            required>
+                    <small id="errorCelular" class="error-mens">⚠️ Solo se permiten números</small>
+
+                    <label for="placa">Placa</label>
+                    <input type="text"
+                            id="placa"
+                            placeholder="PPP1111"
+                            min="7"
+                            max="7"
+                            required>
+
+                    <label for="marca">Marca</label>
+                    <input type="text"
+                            id="marca"
+                            placeholder="KIA"
+                            min="3"
+                            required>
+                    <small id="errorMarca" class="error-mens">⚠️ Solo se permiten letras y espacios</small>
+
+                    <label for="modelo">Modelo</label>
+                    <input type="text"
+                            id="modelo"
+                            placeholder="Civic"
+                            min="3"
+                            required>
+                    <small id="errorModelo" class="error-mens">⚠️ Solo se permiten letras y espacios</small>
+
+                    <label for="kilometraje">kilometraje</label>
+                    <input type="text"
+                            id="kilometraje"
+                            placeholder="10000000"
+                            min="3"
+                            required>
+                    <small id="errorKilometraje" class="error-mens">⚠️ Solo se permiten números</small>
+                    
+                    <label for="servicio">Seleccione el servicio</label>
+                    <select id="servicio" required>
+                        <option value="">Seleccione...</option>
+                        <option value="correc">Mantenimiento correctivo</option>
+                        <option value="preven">Mantenimiento preventivo</option>
+                        <option value="abc">ABC de Motor</option>
+                    </select>
+
+                    <p id="detalleServ" class="detalle">
+                        Seleccione un servicio para ver su precio, fecha y hora disponibles.
+                    </p>
+
+                    <!--btns-->
+                    <div class="botonesss">
+                        <!--submit envia la informacion a la bdd (backend)-->
+                        <button type="submit" class="btn-reservar">
+                            Reservar
+                        </button>
+                        <!--reset restable todos los valores a los iniciales-->
+                        <button type="reset" class="btn-limpiar">
+                            Limpiar
+                        </button>
+                    </div>
+
+                    <!--mensaje oculto al reservar-->
+                    <div id="resultado" class="oculto"
+                    aria-live="polite">
+                    <h2>Reservación recibida</h2>
+                    <p id="mensajeResultado"></p>
+                    </div>
+
+                </form>
+            </div>
+        </main>
+        
+        <footer>
+            &copy; Empresa ABC. 2026 .Todos los derechos reservados
+                <b>Dirección: </b>Av.por ahi
+                <b>Contacto: </b>conmigo:b
+        </footer>
+
+    </body>
+
+</html>

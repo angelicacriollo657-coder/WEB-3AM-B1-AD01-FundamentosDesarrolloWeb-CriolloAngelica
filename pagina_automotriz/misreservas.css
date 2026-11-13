@@ -1,0 +1,124 @@
+/* Reseteo básico de márgenes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Times New Roman', sans-serif;
+    background-color: #dfcce4;
+    color: #333;
+}
+
+/* 1. Header/Menú: Nombre a la izquierda, links a la derecha */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #320f51;
+    color: #ffffff;
+    padding: 1rem 2rem;
+
+    /*linea hr*/
+    border-bottom: 4px solid #601031;
+}
+
+.menu h3 {
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+}
+
+.menu nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.menu nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.menu nav a:hover {
+    color: #b396d1;
+}
+
+/* Contenedor principal de la tabla (igual al estilo ancho del login) */
+.tabla {
+    background-color: rgb(197, 157, 195);
+    padding: 35px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 3rem auto;
+    box-shadow: 0 10px 30px rgb(175, 85, 171);
+    flex: 1; /* Empuja el footer hacia abajo */
+}
+
+/* Título de la tabla */
+.tabla h2 {
+    text-align: center;
+    color: rgb(92, 10, 85);
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+/* Estructura de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Cabecera de la tabla (th) con el tono morado oscuro institucional */
+th {
+    background-color: #320f51;
+    color: #ffffff;
+    padding: 14px 16px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 3px solid #601031;
+}
+
+/* Celdas de datos (td) */
+td {
+    padding: 14px 16px;
+    color: rgb(53, 11, 61);
+    border-bottom: 1px solid #ecc7ece3;
+    font-size: 14px;
+}
+
+/* Efecto estético al pasar el cursor sobre las filas */
+tbody tr:hover {
+    background-color: #f4e8f6;
+}
+
+/* footer */
+footer {
+    margin-top: auto;
+    background-color: #18072e;
+    color: #cccccc;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+}
+
+footer b {
+    color: white;
+    margin-left: 0.5rem;
+}

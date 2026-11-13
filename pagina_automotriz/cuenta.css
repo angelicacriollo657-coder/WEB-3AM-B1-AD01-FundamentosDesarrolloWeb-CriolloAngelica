@@ -1,0 +1,178 @@
+/* Reseteo básico de márgenes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Times New Roman', sans-serif;
+    background-color: #dfcce4;
+    color: #333;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('carrof.jpg');
+}
+
+/* 1. Header/Menú: Nombre a la izquierda, links a la derecha */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #320f51;
+    color: #ffffff;
+    /* Aumenta los números del padding: 
+       El primer valor (1.5rem) agranda el alto de arriba y abajo.
+       El segundo valor (2rem) controla los lados. */
+    padding: 1.5rem 2rem;
+
+    /*linea hr*/
+    border-bottom: 4px solid #601031;
+}
+
+.menu h3 {
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+}
+
+.menu nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.menu nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.menu nav a:hover {
+    color: #b396d1;
+}
+
+/*login*/
+.seccion-principal {
+    display: flex;
+    justify-content: center; /* Centra el cuadro de login horizontalmente */
+    align-items: center;
+    max-width: 1300px;
+    width: 90%;
+    margin: 3rem auto;
+    flex: 1;
+    gap: 2rem;
+}
+
+.login{
+    background-color: rgb(197, 157, 195);
+    padding: 35px;
+    border-radius: 12px;
+    width: 650px;
+    max-width: 100%;
+    box-shadow: 0 10px 30px rgb(175, 85, 171);
+    margin: 0 auto; /* fuerza el centrado */
+}
+
+h2{
+    text-align: center;
+    color: rgb(92, 10, 85);
+    margin-bottom: 10px;
+}
+
+.subtitulo{
+    text-align: center;
+    color: rgb(131, 5, 47);
+    /*margen de abajo*/
+    margin-bottom: 25px;
+}
+
+label{
+    /*para poner en bloques*/
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: rgb(14, 2, 24);
+}
+
+input, select{
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ecc7ece3;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+input:focus, select:focus{
+    outline: none;
+    color: rgb(99, 4, 102);
+    border-color: rgb(86, 15, 100);
+    border-radius: 10px;
+}
+
+/*btns*/
+.botones {
+    display: flex;
+    justify-content: center; /* Centra los botones en el medio */
+    gap: 15px;               /* Separa los botones entre sí */
+    margin-top: 25px;
+}
+
+button{
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    color: rgb(53, 11, 61);
+    cursor: pointer;
+    background-color: rgba(153, 59, 190, 0.952);
+    font-size: 14px;
+    border-color: black;
+}
+
+.btn-iniciar:hover{
+    background-color: rgba(187, 113, 216, 0.952);
+}
+
+.btn-cerrar:hover{
+    background-color: rgba(187, 113, 216, 0.952);
+}
+
+.btn-limpiar{
+    background-color: rgb(143, 140, 140);
+}
+
+.btn-limpiar:hover{
+    background-color: rgb(165, 161, 161);
+}
+
+/* footer */
+footer {
+    margin-top: auto;
+    background-color: #18072e;
+    color: #cccccc;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+}
+
+footer b {
+    color: white;
+    margin-left: 0.5rem;
+}
+
+/*mensaje oculto de error*/
+#errorUsuario{
+    font-size: 12px;
+    margin-top: 4px; /*deja un espacio entre el texbox y el mensaje*/
+    margin-bottom: 10px; /*deja espacio entre los elementos de abajo*/
+    display: none; /*asegura que ocupa su propia linea*/
+}

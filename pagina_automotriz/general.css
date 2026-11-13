@@ -1,0 +1,74 @@
+/* Reseteo básico de márgenes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Times New Roman', sans-serif;
+    background-color: #dfcce4;
+    color: #333;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('carrof.jpg');
+}
+
+/* 1. Header/Menú: Nombre a la izquierda, links a la derecha */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #320f51;
+    color: #ffffff;
+    /* Aumenta los números del padding: 
+       El primer valor (1.5rem) agranda el alto de arriba y abajo.
+       El segundo valor (2rem) controla los lados. */
+    padding: 1.5rem 2rem;
+
+    /*linea hr*/
+    border-bottom: 4px solid #601031;
+}
+
+.menu h3 {
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+}
+
+.menu nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.menu nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.menu nav a:hover {
+    color: #b396d1;
+}
+
+/* footer */
+footer {
+    margin-top: auto;
+    background-color: #18072e;
+    color: #cccccc;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+}
+
+footer b {
+    color: white;
+    margin-left: 0.5rem;
+}
